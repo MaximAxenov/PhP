@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Huntsman;
+    src: url('../fonts/Huntsman.otf');
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(0 0 0 / 75%);
+}
+
+.clearfix {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.logo {
+    color: rgb(0, 0, 0);
+    align-self: center;
+    font-family: Huntsman;
+    font-size: 36px;
+    height: 36px;
+    float: left;
+    margin: 10px 0 0 30px;
+    text-shadow: 2px 2px 5px black, 0 0 0.5em rgb(255, 0, 179);
+}
+
+a {
+    text-decoration: none;
+}
+
+.product_img {
+    display: block;
+    cursor: pointer;
+}
+
+.gallery {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px black;
+    position: relative;
+}
+
+.max {
+    width: 400px;
+    position: absolute;
+    left: 50px;
+    top: 0;
+    z-index: 1;
+}
+
+.page-footer {
+    min-height: 90px;
+    background-color: rgb(0 0 0 / 75%);
+    margin: 0 auto;
+}
+
+.page-footer__text {
+    margin: 0;
+    color: #000000;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 35px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.image_big {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image_big a {
+    color: #555;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px black, 0 0 1em red;
+}
+
+.image_big h2 {
+    margin-top: 20px;
+}
